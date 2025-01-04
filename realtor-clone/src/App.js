@@ -6,17 +6,22 @@ import Profile from "./pages/Profile";
 import Offers from "./pages/Offers";
 import SignIn from "./pages/SignIn";
 import ForgotPassword from "./pages/ForgotPassword";
+import Header from "./components/Header";
 function App() {
+  let isLoggedIn = true;
   return (
+
     <>
+    
     <Router>
+      <Header isLoggedIn={isLoggedIn} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/offers" element={<Offers />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
-        
+
       </Routes>
     </Router>
     </>
