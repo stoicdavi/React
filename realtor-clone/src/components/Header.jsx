@@ -23,15 +23,15 @@ export default function Header() {
         <div>
           <ul className="flex justify-between items-center space-x-4">
             <li
-              className={`cursor-pointer py-3 text-sm font-semibold border-b-[3px] ${
-                pathMatchRoute('/') ? 'text-black border-b-red-500' : 'text-gray-400 border-b-transparent'
+              className={`cursor-pointer py-3 text-sm font-semibold border-b-[3px] hover:text-gray-600 hover:border-b-red-300 transition duration-100 ease-in-out ${
+                pathMatchRoute('/') ? 'text-black border-b-red-500 ' : 'text-gray-400 border-b-transparent'
               }`}
               onClick={() => navigate('/')}
             >
               Home
             </li>
             <li
-              className={`cursor-pointer py-3 text-sm font-semibold border-b-[3px] ${
+              className={`cursor-pointer py-3 text-sm font-semibold border-b-[3px]  hover:text-gray-600 hover:border-b-red-300 transition duration-100 ease-in-out ${
                 pathMatchRoute('/offers') ? 'text-black border-b-red-500' : 'text-gray-400 border-b-transparent'
               }`}
               onClick={() => navigate('/offers')}
@@ -39,7 +39,7 @@ export default function Header() {
               Offers
             </li>
             <li
-              className={`cursor-pointer py-3 text-sm font-semibold border-b-[3px] ${
+              className={`cursor-pointer py-3 text-sm font-semibold border-b-[3px] hover:text-gray-600 hover:border-b-red-300 transition duration-100 ease-in-out  ${
                 pathMatchRoute('/signin') ? 'text-black border-b-red-500' : 'text-gray-400 border-b-transparent'
               }`}
               onClick={() => navigate('/signin')}
