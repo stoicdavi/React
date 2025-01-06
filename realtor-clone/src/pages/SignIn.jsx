@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, } from 'react'
 import { Link } from 'react-router-dom'
-import OAuth from './OAuth'
+import OAuth from '../components/OAuth'
 
 export default function SignIn() {
   const [formData, setFormData] = useState({
@@ -39,7 +39,7 @@ export default function SignIn() {
       </p>
 
       </div>
-      <button className='w-full py-3 mt-4 text-lg text-white bg-blue-500 hover:bg-blue-700 transition duration-200 rounded hover:shadow-gray-500 active:bg-blue-900'>Sign In</button>
+      <button className='w-full py-3 mt-4 text-lg text-white bg-blue-500 hover:bg-blue-700 transition duration-200 rounded hover:shadow-gray-500 active:bg-blue-900 uppercase ease-in-out'>Sign In</button>
        <div className='flex items-center my-4 before:border-t before:flex-1 before:border-gray-400 after:border-t after:flex-1 after:border-gray-400'>
           <p className='text-center font-semibold mx-3'>OR</p>
         </div>
